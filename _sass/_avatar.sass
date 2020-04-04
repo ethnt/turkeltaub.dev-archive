@@ -1,0 +1,21 @@
+.avatar
+  background-image: url($avatar--image)
+  background-color: darken($color--primary, 50%)
+  background-size: cover
+  background-blend-mode: screen
+  border-radius: 50%
+  display: inline
+  float: right
+  margin-left: 2rem
+  max-width: 20%
+  position: relative
+  width: 100%
+
+  &:before
+    display: block
+    content: ""
+    width: 100%
+    padding-top: 100%
+
+  @media (max-width: $breakpoint)
+    display: none

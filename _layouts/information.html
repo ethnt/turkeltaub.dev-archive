@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="page page--information">
+  <div class="page__header">
+    <span class="avatar"></span>
+    {{ content }}
+  </div>
+  <div class="page__content">
+    {% assign collections = site.collections | where_exp:"collection","collection.on_page == true" | sort:"position" %}
+    {% for collection in collections %}
+    <section>
+      <h3>{{ collection.title }}</h3>
+      {% assign documents = collection.docs | sort:"position" %}
+      {% for document in documents %}
+      <article>
+        <h4><a href="{{ document.link }}">{{ document.title }}</a></h4>
+        {{ document.content }}
+        {% if document.dates %}
+        <span>
+          {{ document.dates.start }}
+          {% if document.dates.end %}
+          &ndash;
+          {{ document.dates.end }}
+          {% endif %}
+        </span>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+</div>

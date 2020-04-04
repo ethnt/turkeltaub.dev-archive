@@ -1,0 +1,31 @@
+---
+title: Ethan Turkeltaub
+timezone: America/New_York
+collections:
+  education:
+    title: Education
+    output: false
+    position: 2
+    on_page: true
+  experience:
+    title: Experience
+    output: false
+    position: 1
+    on_page: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: ethan@turkeltaub.dev
+description: Brooklyn-based software engineer.
+baseurl:
+url: https://turkeltaub.dev
+primary_color: "#fcf6f5"
+avatar_image: "/uploads/beach.jpg"
+typekit_id: nau5oob
+exclude:
+- ".sass-cache/"
+- ".jekyll-cache/"
+- gems.*
