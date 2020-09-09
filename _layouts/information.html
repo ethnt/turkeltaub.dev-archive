@@ -15,7 +15,7 @@ layout: default
       {% assign documents = collection.docs | sort:"position" %}
       {% for document in documents %}
       <article>
-        <h3><a href="{{ document.link }}">{{ document.title }}</a></h3>
+        <h3><a href="{{ document.link }}" target="_blank">{{ document.title }}</a></h3>
         {{ document.content }}
         {% if document.dates %}
         <span>

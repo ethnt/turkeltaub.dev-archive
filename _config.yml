@@ -12,6 +12,11 @@ collections:
     output: false
     position: 1
     on_page: true
+  projects:
+    title: Projects
+    output: false
+    position: 3
+    on_page: true
   posts:
     title: Posts
     output: true
