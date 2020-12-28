@@ -1,6 +1,6 @@
 ---
 title: Fanzter
-position: 4
+position: 5
 link: https://en.wikipedia.org/wiki/Fanzter
 dates:
   start: Jun. 2011

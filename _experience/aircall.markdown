@@ -1,6 +1,6 @@
 ---
 title: Aircall
-position: 2
+position: 3
 link: https://aircall.io
 dates:
   start: Apr. 2018

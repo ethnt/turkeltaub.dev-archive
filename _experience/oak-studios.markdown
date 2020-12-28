@@ -1,6 +1,6 @@
 ---
 title: Oak Studios
-position: 3
+position: 4
 link: https://oak.is
 dates:
   start: Jun. 2015
